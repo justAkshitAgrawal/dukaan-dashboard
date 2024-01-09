@@ -13,9 +13,9 @@ import TablePagination from "@/components/TablePagination";
 
 const Home = () => {
   return (
-    <div className="w-[1216px] min-h-screen">
+    <div className="w-full min-h-screen">
       <Header />
-      <div className="h-[1482px] bg-[#fafafa]  border-r">
+      <div className="h-[1482px] bg-[#fafafa]">
         <div className="pt-7 px-5">
           <div className="flex items-center w-full justify-between">
             <p className="text-[20px] font-medium">Overview</p>
@@ -25,7 +25,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="flex items-center mt-5 justify-between">
+          <div className="flex items-center mt-5 justify-between gap-[16px]">
             <Card title="Online orders" description="231" />
             <Card title="Amount received" description="₹23,92,312.19" />
           </div>
@@ -36,7 +36,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className=" bg-white p-2 rounded-lg mt-4 shadow-md shadow-[#1A181E0A]">
+          <div className=" bg-white p-2 rounded-lg mt-4 mx-4 shadow-md shadow-[#1A181E0A]">
             <div className="flex items-center justify-between">
               <div className="flex items-center  px-[8px] border border-[#D9D9D9] w-fit rounded-[4px] py-[6px] space-x-2">
                 <FiSearch className="text-[14px] text-black/40" />
@@ -76,8 +76,8 @@ const Home = () => {
 
 const Header = () => {
   return (
-    <div className="px-5 py-3 border-b border-[#D9D9D9] border-r flex w-full items-center gap-[16px]">
-      <div className="flex items-center w-[400px]">
+    <div className="px-5 py-3 border-b border-[#D9D9D9] flex w-full items-center gap-[16px] justify-between">
+      <div className="flex items-center">
         <h1 className="text-[15px]">Payments</h1>
 
         <div className="flex items-center  ml-8 space-x-1 cursor-pointer">
@@ -87,7 +87,7 @@ const Header = () => {
       </div>
 
       {/* Searchbar */}
-      <div className="flex items-center bg-[#F2F2F2] w-[380px] px-2 py-2 space-x-2 rounded-md">
+      <div className="flex items-center bg-[#F2F2F2] px-2 py-2 space-x-2 rounded-md w-[600px]">
         <FiSearch className="text-black/50" />
         <input
           type="text"
@@ -98,7 +98,7 @@ const Header = () => {
         />
       </div>
 
-      <div className="w-[400px] flex items-center justify-end gap-[12px]">
+      <div className="flex items-center justify-end gap-[12px]">
         <Image src={megaphone} alt="megaphone" className="cursor-pointer" />
         <Image src={drop} alt="drop" className="cursor-pointer" />
       </div>

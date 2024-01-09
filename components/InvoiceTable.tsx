@@ -26,14 +26,14 @@ const InvoiceTable = () => {
       <Table>
         <TableHeader className="bg-[#f2f2f2] !border-none text-black/30">
           <TableRow className=" !border-none">
-            <TableHead className="w-[246px]  rounded-[4px]">Order ID</TableHead>
-            <TableHead className="w-[246px] ">
+            <TableHead className="w-[25%]  rounded-[4px]">Order ID</TableHead>
+            <TableHead className="w-[25%] ">
               <div className="flex ">
                 <p>Order date</p> <FaSortDown />
               </div>
             </TableHead>
-            <TableHead className="w-[246px] text-right">Order amount</TableHead>
-            <TableHead className="w-[246px] text-right  rounded-[4px]">
+            <TableHead className="w-[25%] text-right">Order amount</TableHead>
+            <TableHead className="w-[25%] text-right  rounded-[4px]">
               <div className="flex items-center space-x-1 justify-end ">
                 <p>Transaction fees</p>
                 <MdInfoOutline />

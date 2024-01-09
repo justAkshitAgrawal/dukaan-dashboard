@@ -7,7 +7,7 @@ import { CiWallet } from "react-icons/ci";
 
 const SideBar = () => {
   return (
-    <div className="w-[224px] bg-[#1E2640] p-3 relative">
+    <div className="w-[250px] bg-[#1E2640] p-3 relative">
       <div className="flex items-center space-x-2 w-full">
         <div>
           <Image

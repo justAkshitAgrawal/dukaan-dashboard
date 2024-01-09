@@ -15,10 +15,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-inter">
-        <div className="flex justify-center">
-          <div className=" max-w-[1440px] w-full flex min-h-screen">
+        <div className="flex w-full ">
+          <div className=" w-full flex min-h-screen">
             <SideBar />
-            <div>{children}</div>
+            <div className="w-full">{children}</div>
           </div>
         </div>
       </body>
